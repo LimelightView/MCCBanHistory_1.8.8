@@ -16,14 +16,14 @@ Step by step process of how to install the mod.
 
 ```
 1. Install Forge for 1.8.8 or 1.8.9
-2. Download the MCCBanHistory mod for 1.8.8 or 1.8.9
+2. Download the repository as a zip file
 3. If you have not done so, run the Forge profile once to generate the mods folder
-4. Add the MCCBanHistory.jar file to the mods folder
+4. Move the MCC_Ban_History-1.8.8.jar from the zip file to your mods folder
 ```
 
 ## Builds / Downloads
 
-* 1.8.8 or 1.8.9:
+* 1.8.8 or 1.8.9: MCC_Ban_History.jar
 
 ## Contributing
 
