@@ -40,8 +40,8 @@ Twitter: RRunner#6860
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This mod is licensed under the GNU General Public License v3. Please see LICENSE.md for more information.
 
 ## Acknowledgments
 
-*
+* PurpleBooth for their README layout (https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
