@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mccbanhistory",
+  "name": "MC-Central Ban History",
+  "description": "Allows a user to check the ban / mute history of a player in-game.",
+  "version": "1.0",
+  "mcversion": "1.8.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["RRunner"],
+  "credits": "MCCentral, the server for which this mod is made. (IP: )",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
