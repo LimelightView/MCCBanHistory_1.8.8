@@ -1,8 +1,11 @@
 package com.tutanota.lime_light.banHistory.commands;
 
+import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.item.Item;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
@@ -16,7 +19,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommandBanHistory implements ICommand
+public class CommandBanHistory extends CommandBase implements ICommand
 {
     @Override
     public String getCommandName() { return "history"; }
@@ -57,7 +60,12 @@ public class CommandBanHistory implements ICommand
     @Override
     public List<String> addTabCompletionOptions(ICommandSender sender, String[] args, BlockPos pos)
     {
-        return null;
+        return getListOfStringsMatchingLastWord(args, this.getPlayers());
+    }
+
+    private String[] getPlayers()
+    {
+        return MinecraftServer.getServer().getAllUsernames();
     }
 
     @Override
