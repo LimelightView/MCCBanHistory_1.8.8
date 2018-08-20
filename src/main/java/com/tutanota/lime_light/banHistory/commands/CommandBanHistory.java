@@ -1,10 +1,14 @@
 package com.tutanota.lime_light.banHistory.commands;
 
+import com.google.common.collect.Lists;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiPlayerTabOverlay;
+import net.minecraft.client.network.NetHandlerPlayClient;
+import net.minecraft.client.network.NetworkPlayerInfo;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.item.Item;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.ChatComponentText;
@@ -19,7 +23,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommandBanHistory extends CommandBase implements ICommand
+public class CommandBanHistory extends CommandBase
 {
     @Override
     public String getCommandName() { return "history"; }
@@ -60,12 +64,18 @@ public class CommandBanHistory extends CommandBase implements ICommand
     @Override
     public List<String> addTabCompletionOptions(ICommandSender sender, String[] args, BlockPos pos)
     {
-        return getListOfStringsMatchingLastWord(args, this.getPlayers());
-    }
+        NetHandlerPlayClient netHandler = Minecraft.getMinecraft().thePlayer.sendQueue;
+        List<NetworkPlayerInfo> playerInfo = new ArrayList(netHandler.getPlayerInfoMap());
+        List<String> playerList = Lists.<String>newArrayList();
 
-    private String[] getPlayers()
-    {
-        return MinecraftServer.getServer().getAllUsernames();
+        for (int i = 0; i < playerInfo.size(); ++i)
+        {
+            if (i < playerInfo.size())
+            {
+                playerList.add(playerInfo.get(i).getGameProfile().getName());
+            }
+        }
+        return getListOfStringsMatchingLastWord(args, playerList);
     }
 
     @Override

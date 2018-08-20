@@ -45,3 +45,4 @@ This mod is licensed under the GNU General Public License v3. Please see LICENSE
 ## Acknowledgments
 
 * PurpleBooth for their README layout (https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* SteveKunG for an example of the TabAutoComplete code (http://www.minecraftforge.net/forum/profile/41126-stevekung/)
