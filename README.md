@@ -27,7 +27,7 @@ Step by step process of how to install the mod.
 
 ## Contributing
 
-If you have any suggestions for the mod, please contact me via one of the methods below.
+If you have any suggestions, issues, or concerns for the mod, please contact me via one of the methods below.
 ```
 Email  : lime_light@tutanota.com
 Discord: @LimelightView
@@ -44,5 +44,11 @@ This mod is licensed under the GNU General Public License v3. Please see LICENSE
 
 ## Acknowledgments
 
+* AcceptedAppeal for their wonderful design ideas implemented in Version 1.0.1 (https://www.mccentral.org/profile/eddie)
+    * Chat formatting
+    * Color Scheme
+    * Hover text
+    * Link to the URL
 * PurpleBooth for their README layout (https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * SteveKunG for an example of the TabAutoComplete code (http://www.minecraftforge.net/forum/profile/41126-stevekung/)
+* Jabelar for his tutorial on creating server side commands, and many of his miscellaneous forum posts (http://jabelarminecraft.blogspot.com)
