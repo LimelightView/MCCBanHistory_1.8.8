@@ -20,7 +20,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.0"
+version = "1.0.1"
 group= "com.tutanota.lime_light.banHistory" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "MCC_Ban_History-1.8.8"
 
